@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attraction.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @attraction.description %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @attraction.capacity %>
+</p>
+
+<p>
+  <strong>Park:</strong>
+  <%= @attraction.park_name(@attraction) %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @attraction.status %>
+</p>
+
+<%= link_to 'Edit', edit_attraction_path(@attraction) %> |
+<%= link_to 'Back', attractions_path %>

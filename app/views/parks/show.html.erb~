@@ -20,16 +20,5 @@
   <%= @park.status %>
 </p>
 
-<p>
-  <strong>Attractions:</strong>
-  <% @park.attractions.each do |attraction| %>
-    <p>
-      Name: <%= attraction.name %><br/>
-      Description: <%= attraction.description %><br/>
-      Status: <%= attraction.status %><br/>
-    </p>
-  <% end %>
-</p>
-
 <%= link_to 'Edit', edit_park_path(@park) %> |
 <%= link_to 'Back', parks_path %>
